@@ -233,6 +233,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    redis (4.1.2)
     regexp_parser (1.6.0)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -366,6 +367,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -376,6 +378,7 @@ DEPENDENCIES
   pg (~> 1.1.4)
   puma (~> 3.11)
   rails (~> 5.2.3)
+  redis (~> 4.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spree_api (~> 3.7.0)

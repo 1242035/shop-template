@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+* Command
+    rails g spree:install --user_class=Spree::User
+    rails g spree:auth:install
+    rails g spree_gateway:install
+Sample:
+User: chidungdekiemtra@gmail.com - 123456 

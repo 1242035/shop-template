@@ -8,7 +8,7 @@
 #       Instead you must either set a new value or remove entry, clear cache, and remove database entry.
 #
 # In order to initialize a setting do:
-# config.setting_name = 'new value'
+config.setting_name = 'Viauco shop'
 Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application

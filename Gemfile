@@ -29,6 +29,7 @@ group :production do
   #gem 'mini_magick', '~> 4.9'
   #Use postgresql
   gem 'pg', '~> 1.1.4'
+  gem 'rails_12factor'
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

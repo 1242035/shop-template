@@ -71,8 +71,6 @@ GEM
     byebug (11.0.1)
     camertron-eprun (1.1.1)
     cancancan (2.3.0)
-    canonical-rails (0.2.6)
-      rails (>= 4.1, < 6.1)
     capybara (3.27.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -90,9 +88,9 @@ GEM
       nokogiri (~> 1.8)
     cldr-plurals-runtime-rb (1.0.1)
     climate_control (0.2.0)
-    coffee-rails (4.2.2)
+    coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0)
+      railties (>= 5.2.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -195,7 +193,8 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (3.1.1)
-    puma (3.12.1)
+    puma (4.0.1)
+      nio4r (~> 2.0)
     rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (2.0.7)
@@ -240,7 +239,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redis (4.1.2)
     regexp_parser (1.6.0)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -313,12 +311,6 @@ GEM
     spree_extension (0.0.9)
       activerecord (>= 4.2)
       spree_core
-    spree_frontend (3.7.3)
-      bootstrap-sass (~> 3.4)
-      canonical-rails (~> 0.2.3)
-      jquery-rails (~> 4.3)
-      spree_api (= 3.7.3)
-      spree_core (= 3.7.3)
     spree_gateway (3.4.1)
       spree_core (>= 3.1.0, < 4.0)
       spree_extension
@@ -380,34 +372,33 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)
-  bootsnap (>= 1.1.0)
+  bcrypt (~> 3.1.13)
+  bootsnap (>= 1.4.4)
   byebug
-  capybara (>= 2.15)
+  capybara (>= 3.27)
   chromedriver-helper
-  coffee-rails (~> 4.2)
+  coffee-rails (~> 5.0)
+  devise
   duktape
-  jbuilder (~> 2.5)
+  jbuilder (~> 2.9)
   pg (~> 1.1.4)
-  puma (~> 3.11)
+  puma (~> 4.0.1)
   rails (~> 5.2.3)
   rails_12factor
-  redis (~> 4.0)
   sass-rails (~> 5.0)
   selenium-webdriver
-  spree_api (~> 3.7.0)
+  spree_api (~> 3.7.3)
   spree_auth_devise (~> 3.5)
-  spree_backend (~> 3.7.0)
-  spree_cmd (~> 3.7.0)
-  spree_core (~> 3.7.0)
-  spree_frontend (~> 3.7.0)
+  spree_backend (~> 3.7.3)
+  spree_cmd (~> 3.7.3)
+  spree_core (~> 3.7.3)
   spree_gateway (~> 3.4)
-  spree_sample (~> 3.7.0)
+  spree_sample (~> 3.7.3)
   sqlite3
-  turbolinks (~> 5)
+  turbolinks (~> 5.2)
   tzinfo-data
-  uglifier (>= 1.3.0)
-  web-console (>= 3.3.0)
+  uglifier (>= 4.1.20)
+  web-console (>= 3.3)
 
 RUBY VERSION
    ruby 2.6.3p62

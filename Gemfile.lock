@@ -378,7 +378,6 @@ DEPENDENCIES
   capybara (>= 3.27)
   chromedriver-helper
   coffee-rails (~> 5.0)
-  devise
   duktape
   jbuilder (~> 2.9)
   pg (~> 1.1.4)

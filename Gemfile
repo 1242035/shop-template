@@ -62,7 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # spree
-gem 'devise'
+#gem 'devise'
 gem 'spree_core', '~> 3.7.3'
 gem 'spree_api', '~> 3.7.3'
 gem 'spree_cmd', '~> 3.7.3'

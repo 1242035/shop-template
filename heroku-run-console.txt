@@ -1,0 +1,3 @@
+user = Spree::User.create!(:email => "email@gmail.com", :password => "password@")
+user.spree_roles.add!(:name => "admin")
+user.spree_roles<< Spree::Role.find_by(:name => "admin")

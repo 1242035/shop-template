@@ -8,20 +8,12 @@
 #       Instead you must either set a new value or remove entry, clear cache, and remove database entry.
 #
 # In order to initialize a setting do:
-#config.setting_name = 'Viauco shop'
+# config.setting_name = 'new value'
 Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
-  #config.use_s3 = true
-  #config.s3_bucket = ENV.fetch("AWS_BUCKET") { 'bucket' }
-  #config.s3_access_key = ENV.fetch("AWS_KEY") { 'key' }
-  #config.s3_secret = ENV.fetch("AWS_SECRET") { 'secret' }
 end
-
-#Paperclip.interpolates(:s3_eu_url) do |attachment, style|
-#  "#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
-#end
 
 # Configure Spree Dependencies
 #

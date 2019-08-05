@@ -1148,6 +1148,7 @@ DEPENDENCIES
   coffee-rails (~> 5.0)
   duktape
   jbuilder (~> 2.9)
+  paperclip
   pg (~> 1.1.4)
   puma (~> 4.0.1)
   rails (~> 5.2.3)

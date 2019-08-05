@@ -31,6 +31,7 @@ group :production do
   gem 'pg', '~> 1.1.4'
   gem 'rails_12factor'
   gem 'aws-sdk'
+  gem 'sass'
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

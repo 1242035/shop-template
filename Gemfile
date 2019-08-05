@@ -4,34 +4,36 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails'
 # Use Puma as the app server
-gem 'puma', '~> 4.0.1'
+gem 'puma'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 4.1.20'
+gem 'uglifier'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'duktape'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 5.0'
+gem 'coffee-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5.2'
+gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.9'
+gem 'jbuilder'
 
 group :production do
     # Use Redis adapter to run Action Cable in production
-    #gem 'redis', '~> 4.1'
+    #gem 'redis'
     # Use ActiveModel has_secure_password
-    gem 'bcrypt', '~> 3.1.13'
+    gem 'bcrypt'
     # Use ActiveStorage variant
-    #gem 'mini_magick', '~> 4.9'
+    gem 'mini_magick'
     #Use postgresql
-    gem 'pg', '~> 1.1.4'
+    gem 'pg'
+    
     gem 'rails_12factor'
-    gem 'aws-sdk'
-    gem 'sass'
+    
+    gem 'aws-sdk-s3'
+
     gem 'paperclip'
 end
 # Use Capistrano for deployment
@@ -54,7 +56,7 @@ end
 
 group :test do
     # Adds support for Capybara system testing and selenium driver
-    gem 'capybara', '>= 3.27'
+    gem 'capybara'
     gem 'selenium-webdriver'
     # Easy installation and use of chromedriver to run system tests with Chrome
     gem 'chromedriver-helper'
@@ -65,11 +67,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # spree
 #gem 'devise'
-gem 'spree_core', '~> 3.7.3'
-gem 'spree_api', '~> 3.7.3'
-gem 'spree_cmd', '~> 3.7.3'
-gem 'spree_backend', '~> 3.7.3'
-gem 'spree_frontend', '~> 3.7.3'
-gem 'spree_sample', '~> 3.7.3'
-gem 'spree_auth_devise', '~> 3.5'
-gem 'spree_gateway', '~> 3.4'
+gem 'spree_core'
+gem 'spree_api'
+gem 'spree_cmd'
+gem 'spree_backend'
+gem 'spree_frontend'
+gem 'spree_sample'
+gem 'spree_auth_devise'
+gem 'spree_gateway'
